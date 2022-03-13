@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <title>Room Rental App</title>
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        <nav class="
+
+        flex flex-wrap
+        items-center
+        justify-evenly
+        w-full
+        py-5
+        md:py-0
+        px-4
+        text-lg
+        absolute
+        bg-black/10
+        stroke
+        " id="mainNav">
+            <div class="image-container">
+
+                <img src="./images/home.png" class="w-20 h-14 inline-block logoimg" alt="logo-img">
+                <span class="logo-txt relative top-2 text-white">Room Rental</span>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button"
+                class="h-6 w-6 cursor-pointer xl:hidden hidden md:block" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <div class="hidden w-full md:ml-20 xl:flex xl:m-auto xl:w-auto" id="menu">
+                <ul class="
+              pt-4
+              text-base text-white
+              hidden
+              md:flex
+              md:justify-center
+              md:pt-0
+              mt-4">
+
+                    <li class="center">
+                        <span class="fa fa-home bg-center"></span>
+                        <a class="md:p-4 py-2" href="#">home</a>
+                    </li>
+                    <li>
+                        <span class="fa fa-building bg-center"></span>
+                        <a class="md:p-4 py-2 " href="#">List Property</a>
+                    </li>
+                    <li>
+                        <span class="fa fa-list"></span>
+                        <a class="md:p-4 py-2 " href="#">Features</a>
+                    </li>
+                    <li>
+                        <span class="fa fa-phone"></span>
+                        <a class="md:p-4 py-2 " href="#">contact</a>
+                    </li>
+                    <li>
+                        <span class="fa fa-user"></span>
+                        <a class="md:p-4 py-2" href="#">Sign in</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </nav>
+    </header>
+
+    <!-- bottom navbar -->
+
+    <nav class="bottom-navbar block md:hidden text-white">
+        <a class=" fa fa-home" href="#"></a>
+        <a class="fa fa-building" href="#"></a>
+        <a class="fa fa-list" href="#"></a>
+        <a class="fa fa-phone 2xs:hidden xs:inline-block" href="#"></a>
+        <a class="fa fa-user" href="#"></a>
+    </nav>
+
+    <main>
+        <!-- Main background -->
+        <section id="main-bg">
+            <!-- typewriter effect -->
+            <div class="typewriter-container">
+                <p>Your property search just got <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            </div>
+
+            <img class="main-img" src="images/original-min.webp" alt="">
+
+            <!-- <h1 class="landing-page-heading">You can Buy</h1> -->
+
+
+        </section>
+
+        <!-- Search bar  -->
+        <div class="search-container">
+            <input type="text" id="box" placeholder="Search anything..." class="search__box">
+            <i class="fa fa-search search__icon" id="icon" onclick="toggleShow()"></i>
+        </div>
+
+
+        <!-- carousel -->
+        <section id="carousel-section">
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="slide-1">
+                    <input type="radio" name="slides" id="slide-2">
+                    <input type="radio" name="slides" id="slide-3">
+                    <input type="radio" name="slides" id="slide-4">
+                    <input type="radio" name="slides" id="slide-5">
+                    <input type="radio" name="slides" id="slide-6">
+                    <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1041/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Tim Marshall</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1043/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Christian Joudrey</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1044/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Steve Carter</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1045/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Aleksandra Boguslawska</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1049/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Rosan Harmens</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="https://picsum.photos/id/1052/800/450" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Annie Spratt</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- 
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>
