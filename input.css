@@ -7,8 +7,8 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #242c4f;
-  --search-bar: #4d5285;
+  --primary-color: #7ecf40;
+  --bottom-nav: #4aa62f;
 }
 
 /* .navbtn {
@@ -141,7 +141,7 @@ html::-webkit-scrollbar-thumb {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: var(--primary-color);
+  background-color: var(--bottom-nav);
 }
 
 .bottom-navbar a {
@@ -445,7 +445,7 @@ carousel-section {
 .typewriter-container p {
   color: white;
   margin-top: 10px;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   font-family: "Merriweather", serif;
   letter-spacing: 2px;
   padding: 0.5rem;
@@ -456,7 +456,7 @@ carousel-section {
 
 .typewriter-container p span.typed-text {
   font-weight: 300;
-  color: #1a25a1;
+  color: var(--primary-color);
 }
 
 .typewriter-container p span.cursor {
@@ -496,8 +496,8 @@ carousel-section {
 /* Search bar  */
 
 .search-container {
-  width: 45%;
-  height: auto;
+  /* width: 45%; */
+  /* height: auto; */
   background-color: #1e272e;
   /* background-color: transparent; */
 
@@ -507,7 +507,8 @@ carousel-section {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4rem;
-  padding: 10px;
+  padding: 0 10px;
+  transition: all 0.3s;
 }
 
 .search__box {
@@ -536,12 +537,13 @@ carousel-section {
 .search__icon {
   box-sizing: border-box;
   float: right;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
+  font-size: 150%;
   display: inline-block;
   /*   justify-content: center;
   align-items: center; */
   /* margin-left: 0.8rem; */
-  margin-top: -6px;
+  /* margin-top: -6px; */
   cursor: pointer;
   position: absolute;
   color: #fa983a;
@@ -551,7 +553,7 @@ carousel-section {
 }
 
 .search-container:hover > .search__box {
-  width: 92%;
+  width: 97%;
   padding: 0 1rem;
 }
 
@@ -561,5 +563,5 @@ carousel-section {
 
 .show {
   width: 92%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }

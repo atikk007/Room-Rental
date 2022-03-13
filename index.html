@@ -27,8 +27,8 @@
         " id="mainNav">
             <div class="image-container">
 
-                <img src="./images/home.png" class="w-20 h-14 inline-block logoimg" alt="logo-img">
-                <span class="logo-txt relative top-2 text-white">Room Rental</span>
+                <img src="./images/rr-logo.png" class="w-44 h-16 inline-block logoimg" alt="logo-img">
+                <!-- <span class="logo-txt relative top-2 text-white">Room Rental</span> -->
             </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" id="menu-button"
@@ -90,7 +90,8 @@
         <section id="main-bg">
             <!-- typewriter effect -->
             <div class="typewriter-container">
-                <p>Your property search just got <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                <p class="lg:text-4xl sm:text-3xl">Your property search just got <span class="typed-text"></span><span
+                        class="cursor">&nbsp;</span></p>
             </div>
 
             <img class="main-img" src="images/original-min.webp" alt="">
@@ -101,9 +102,10 @@
         </section>
 
         <!-- Search bar  -->
-        <div class="search-container">
+        <div class="search-container sm:w-2/4 sm:h-12 lg-w/2 lg:h-16">
             <input type="text" id="box" placeholder="Search anything..." class="search__box">
-            <i class="fa fa-search search__icon" id="icon" onclick="toggleShow()"></i>
+            <i class="fa fa-search search__icon sm:text-2xl sm:leading-none lg:text-3xl lg:leading-none" id="icon"
+                onclick="toggleShow()"></i>
         </div>
 
 
