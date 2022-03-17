@@ -35,6 +35,7 @@ body {
   height: 200vh;
   /* overflow: hidden; */
   text-transform: capitalize;
+  /* transition: 0.5s linear all; */
 }
 
 #mainNav::before {
@@ -564,4 +565,36 @@ carousel-section {
 .show {
   width: 92%;
   /* border: 1px solid white; */
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 654px) and (max-width: 811px) {
+  .search-container {
+    top: 50%;
+  }
+
+  .typewriter-container {
+    top: 30%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 654px) {
+  .typewriter-container {
+    top: 25%;
+  }
+
+  .search-container {
+    top: 35%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .typewriter-container {
+    top: 20%;
+  }
+
+  .search-container {
+    top: 30%;
+  }
 }
