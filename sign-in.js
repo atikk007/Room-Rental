@@ -19,7 +19,7 @@ function clickToSignIn() {
 }
 
 function darkModeEnable() {
-  document.querySelector(".dark-mode-btn").classList.toggle("active");
+  document.querySelector(".svg-btn").classList.toggle("active");
   document.body.classList.toggle("dark-mode-on");
 }
 
